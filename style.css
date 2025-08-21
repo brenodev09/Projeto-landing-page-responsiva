@@ -23,9 +23,8 @@ body{
 }
 
    h1{
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
+   font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
   font-style: normal;
   color: white;
 }
@@ -66,7 +65,7 @@ main:before{
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.75));
+  background: linear-gradient(rgba(0, 0, 0, 0.85));
   z-index: 1;
 }
 
@@ -105,9 +104,64 @@ nav{
 .textos-main{
     position: relative;
     z-index: 2;
-    margin-top: 6rem;
+    margin: 6rem 7rem 0 ;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+
+    .impact-txt{
+        font-size: 3rem;
+    }
+
+    .sobre-txt{
+        font-size: 1.1rem;
+        width: 80rem;
+        margin-left: 8rem;
+        opacity: 80%;
+    }
+
+}
+
+.botoes-main{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    
+    .btn-fa{
+        cursor: pointer;
+        width: 9rem;
+        padding: 0.83rem;
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 10rem;
+        font-size: 1rem;
+        background: rgb(202, 39, 39);
+        transition: 0.3s ;
+        &:hover{
+            /* background: linear-gradient(120deg, rgb(149, 71, 71) , rgb(74, 9, 9)); */
+            background-color:rgb(59, 9, 9);
+            transition: 0.3s ;
+        }
+    }
+
+    .btn-agenda{
+         cursor: pointer;
+        width: 9rem;
+        padding: 0.83rem;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 10rem;
+        font-size: 1rem;
+        background: rgb(182, 182, 182);
+        transition: 0.3s ;
+        &:hover{
+            /* background: linear-gradient(120deg, rgb(149, 71, 71) , rgb(74, 9, 9)); */
+            background-color:rgb(232, 143, 143);
+            transition: 0.3s ;
+        }
+    }
 }
 
 .botoes-header{
