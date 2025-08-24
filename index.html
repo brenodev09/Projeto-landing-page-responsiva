@@ -16,15 +16,15 @@
 </head>
 
 <body>
-    <main>
+    <main id="inicio">
         <img class="fundo-main" src="/img/fundo main.jpg" alt="">
         <header>
             <img class="logo-header" src="img/logo.png" alt="logo racionais header">
             <nav>
-                <a href="">Início </a>
-                <a href="">Sobre</a>
-                <a href="">Blog</a>
-                <a href="">Ajuda</a>
+                <a href="#inicio">Início </a>
+                <a href="#membros">Membros</a>
+                <a href="#albuns">Albuns</a>
+                <a href="#historia">Sobre</a>
             </nav>
 
             <div class="botoes-header">
@@ -47,7 +47,7 @@
 
     </main>
 
-    <section class="membros">
+    <section id="membros" class="membros">
         <h1>Membros</h1>
 
         <div class="grade-cardsMembros">
@@ -79,36 +79,36 @@
 
     </section>
 
-    <section class="albuns">
+    <section id="albuns" class="albuns">
         <h1>Álbuns em destaque</h1>
 
         <div class="grade-albuns">
             <div class="card-album">
                 <img src="./img/albuns/sobrevivendo no inferno.jpeg" alt="img sobrevivendo no inferno">
                 <p><strong>Sobrevivendo no Inferno</strong> / 1997</p>
-                <a href="">Ver álbum</a>
+                <a href="https://www.youtube.com/watch?v=W4I3wm7vMTo&list=PLcbqoj6PmK64QJxqeNpO4CVN5ROB-5Jvb " target="_blank">Ver álbum</a>
 
             </div>
 
             <div class="card-album">
                 <img src="./img/albuns/Nada como um dia após o outro.jpg" alt="img Nada como um dia após o outro">
                 <p><strong>Nada como um dia após o outro</strong> / 2002</p>
-                <a href="">Ver álbum</a>
+                <a href="https://www.youtube.com/playlist?list=OLAK5uy_mAtZHHv4fBd-f2iczEFb3cuBlLQMWqwsw" target="_blank">Ver álbum</a>
 
             </div>
 
             <div class="card-album">
                 <img src="./img/albuns/1000 trutas, 1000 tretas.jpeg" alt="img 1000 trutas 1000 tretas">
                 <p><strong>1000 Trutas, 1000 Tretas</strong> / 2006</p>
-                <a href="">Ver álbum</a>
+                <a href="https://www.youtube.com/watch?v=zEKWixPu5TU&list=PLcbqoj6PmK661rSRcXbAKy48lABF-BsAk" target="_blank">Ver álbum</a>
             </div>
 
         </div>
 
-        <button class="btn-discografia">Ver discografia completa</button>
+        <button onclick="window.location.href = 'https://open.spotify.com/artist/29CQLw9uLWsl8Qkz9holfr?si=1HuE4ujCTkmknb7HgK702Q'" class="btn-discografia">Ver discografia completa</button>
     </section>
 
-    <section class="container-historia">
+    <section id="historia" class="container-historia">
         <div class="titulo-historia">
             <h1>Rap de verdade, direto das ruas</h1>
             <p>Nascidos na periferia, os Racionais MC’s romperam barreiras, denunciaram injustiças e mostraram ao Brasil
