@@ -57,6 +57,11 @@ main {
         position: absolute;
         object-fit: cover;
         z-index: 0;
+
+        @media(max-width: 500px) {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
@@ -80,22 +85,39 @@ header {
     align-items: center;
     margin: 0 1.5rem 1rem 1rem;
 
+    @media(max-width: 500px) {
+        align-items: center;
+        gap: 1rem;
+
+    }
+
     .logo-header {
         width: 15rem;
         object-fit: cover;
         cursor: pointer;
 
+        @media(max-width: 500px) {
+            display: none;
+        }
+
     }
+
+
 }
 
 nav {
     display: flex;
     gap: 1.1rem;
 
+
     a {
         text-decoration: none;
         font-size: 1.13rem;
         transition: 0.3s ease;
+
+        @media(max-width: 500px) {
+            font-size: 0.90rem;
+        }
 
         &:hover {
             color: red;
@@ -103,6 +125,49 @@ nav {
         }
     }
 }
+
+.botoes-header {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+
+    button {
+        width: 7rem;
+        padding: 0.7rem;
+        border: none;
+        border-radius: 50rem;
+        cursor: pointer;
+        background-color: red;
+        color: white;
+        font-size: 0.9rem;
+        transition: 0.4s ease;
+
+        @media(max-width: 500px) {
+            width: 6rem;
+            padding: 0.6rem;
+            margin-top: 0.4rem;
+        }
+
+
+        &:hover {
+            background-color: rgb(105, 9, 9);
+            transition: 0.4s ease;
+        }
+    }
+
+    .btn2 {
+        border: 2px solid red;
+        background-color: transparent;
+        transition: 0.4s ease;
+
+        &:hover {
+            background-color: rgb(249, 63, 63);
+            border: none;
+            transition: 0.4s ease;
+        }
+    }
+}
+
 
 .textos-main {
     position: relative;
@@ -113,8 +178,19 @@ nav {
     align-items: center;
     gap: 1.2rem;
 
+
+
     .impact-txt {
         font-size: 3rem;
+
+        @media(max-width: 500px) {
+            font-size: 1.65rem;
+            width: 40rem;
+            display: flex;
+            justify-content: center;
+            margin-top: -1.3rem;
+
+        }
     }
 
     .sobre-txt {
@@ -122,6 +198,13 @@ nav {
         width: 80rem;
         margin-left: 8rem;
         opacity: 80%;
+
+        @media(max-width: 500px) {
+            font-size: 0.85rem;
+            width: 32rem;
+            text-align: center;
+            margin-right: 8rem;
+        }
     }
 
 }
@@ -142,6 +225,7 @@ nav {
         font-size: 1rem;
         background: rgb(202, 39, 39);
         transition: 0.3s;
+
 
         &:hover {
             /* background: linear-gradient(120deg, rgb(149, 71, 71) , rgb(74, 9, 9)); */
@@ -169,82 +253,6 @@ nav {
     }
 }
 
-.botoes-header {
-    display: flex;
-    gap: 0.8rem;
-    align-items: center;
-
-    button {
-        width: 7rem;
-        padding: 0.7rem;
-        border: none;
-        border-radius: 50rem;
-        cursor: pointer;
-        background-color: red;
-        color: white;
-        font-size: 0.9rem;
-        transition: 0.4s ease;
-
-        &:hover {
-            background-color: rgb(105, 9, 9);
-            transition: 0.4s ease;
-        }
-    }
-
-    .btn2 {
-        border: 2px solid red;
-        background-color: transparent;
-        transition: 0.4s ease;
-
-        &:hover {
-            background-color: rgb(249, 63, 63);
-            border: none;
-            transition: 0.4s ease;
-        }
-    }
-}
-
-/* .membros{
-    margin-top: 6rem;
-    text-align: center;
-
-    h1{
-        font-size: 3rem;
-     background-image: linear-gradient(185deg, #d21006 40%, #ce7070 60%); 
-        background-clip: text;
-        color: transparent;
-    }
-}
-
-.grade-cardsMembros{
-    display: grid;
-      grid-template-columns: repeat(2,1fr);
-
-    gap: 2rem;
-    /* align-items: start; */
-
-
-/* .card-membro{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: flex-start;
-    align-items: center;    
-
-    img{
-        width: 80%;
-  max-height: 350px;
-  object-fit: cover;
-  border-radius: 8px;
-    }
-
-    p{
-        font-size: 1.1rem;
-        width: 30rem;
-        text-align: center;
-
-    }
-}  */
 
 .membros {
     margin-top: 4.5rem;
@@ -256,6 +264,7 @@ nav {
         color: transparent;
         margin-bottom: 3rem;
         text-align: center;
+
     }
 }
 
@@ -309,12 +318,23 @@ nav {
         color: transparent;
         margin-bottom: 3rem;
         text-align: center;
+
+        @media(max-width: 500px) {
+            font-size: 2.5rem;
+
+        }
     }
 }
 
 .grade-albuns {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    @media(max-width: 500px) {
+        grid-template-columns: 1fr;
+        gap: 2.7rem;
+
+    }
 
 }
 
@@ -335,6 +355,11 @@ nav {
         height: 18rem;
         border-radius: 0.2rem;
         cursor: pointer;
+
+        @media(max-width: 500px) {
+            width: 17rem;
+            height: 16rem;
+        }
 
     }
 
@@ -364,9 +389,13 @@ nav {
     background: transparent;
     transition: 0.3s;
 
+    @media(max-width: 500px) {
+        margin-left: 8.3rem;
+    }
+
     &:hover {
         background-color: rgb(110, 12, 12);
-        border: solid 1.7px rgb(110, 12, 12) ;
+        border: solid 1.7px rgb(110, 12, 12);
         transition: 0.3s;
     }
 }
@@ -377,6 +406,10 @@ nav {
     margin-top: 5rem;
     border-radius: 4rem;
     height: 130vh;
+
+    @media(max-width: 500px) {
+        height: 260vh;
+    }
 }
 
 .titulo-historia {
@@ -392,6 +425,11 @@ nav {
         margin-top: 2rem;
         text-align: center;
 
+        @media(max-width: 500px) {
+            font-size: 2rem;
+
+        }
+
     }
 
     p {
@@ -400,104 +438,129 @@ nav {
         width: 70rem;
         text-align: center;
         margin-left: 11rem;
+
+        @media(max-width: 500px) {
+            font-size: 0.8rem;
+            width: 33rem;
+            text-align: center;
+            margin-left: -1rem;
+        }
     }
 }
 
 .estatisticas-historia {
-  display: flex;
-  justify-content: center;
-  gap: 8rem;
-  margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 3rem;
+
+    @media(max-width: 500px) {
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-right: 0.5rem;
+
+    }
 }
 
 .dado {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  h2 {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    color: white;
-    font-size: 8vh;
-    text-align: center;
-    margin-bottom: 0.7rem;
-  }
+    h2 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: bold;
+        color: white;
+        font-size: 8vh;
+        text-align: center;
+        margin-bottom: 0.7rem;
+    }
 
-  p {
-    font-size: 1rem;
-    opacity: 50%;
-  }
+    p {
+        font-size: 1rem;
+        opacity: 50%;
+    }
 
-  .p1 {
-    margin-left: 40px;
-  }
+    .p1 {
+        margin-left: 40px;
+    }
 
-  .p2 {
-    margin-left: 20px;
-  }
+    .p2 {
+        margin-left: 20px;
+    }
 
-  .p3 {
-    margin-left: 40px;
-  }
+    .p3 {
+        margin-left: 40px;
+    }
 }
 
 
 .main-historia {
     display: flex;
-
     margin-top: 5rem;
-   
     gap: 20px;
 
+    @media(max-width: 500px) {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
 
     .img-grupo {
         width: 36rem;
         height: 27rem;
         margin-left: 1rem;
+
+        @media(max-width: 500px) {
+            width: 27rem;
+            height: 18rem;
+            margin-left: 2.4rem;
+        }
     }
 }
 
-.topic-story{
-display: flex;
-flex-direction: column;
-gap: 0.8rem;
-padding: 1rem;
-width: 26rem;
-border: 1.8px solid red;
-border-radius: 1rem;
-
-.titulo-story{
+.topic-story {
     display: flex;
-    align-items: center;
-    justify-content: space-between;    
-    strong{
-        color: white;
-        font-size: 1.2rem;
-        font-family: "Ubuntu", sans-serif;
-    }
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+    width: 26rem;
+    border: 1.8px solid red;
+    border-radius: 1rem;
 
-    img{
-        width: 2rem;
+    .titulo-story {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        strong {
+            color: white;
+            font-size: 1.2rem;
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        img {
+            width: 2rem;
+        }
     }
- }
 }
 
-.grade-topicos{
+.grade-topicos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-left: 2.5rem;
+
+    @media(max-width: 500px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* .grade-topicos:last-child{
     margin
 } */
 
-.last-topic{
-    
-}
+.last-topic {}
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -506,7 +569,7 @@ footer{
     padding: 1rem;
     text-align: center;
 
-    .redes-sociais{
+    .redes-sociais {
         display: flex;
         gap: 1rem;
         justify-content: center;
